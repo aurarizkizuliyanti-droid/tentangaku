@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Siswa</title>
+
+<style>
+
+body{
+    background: #fdf6f0;
+    font-family: "Times New Roman", serif;
+}
+
+table{
+    width: 85%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fffaf7;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+td{
+    border: 2px solid #e7d8c9;
+    padding: 10px;
+    font-size: 20px;
+    color: #5c4b51;
+}
+
+.judul{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 25px;
+    background: #fde2e4;
+    color: #6d6875;
+}
+
+.label{
+    width: 25%;
+    background: #faedcd;
+}
+
+.input-area{
+    background: #fff;
+}
+
+input[type=text]{
+    width: 320px;
+    height: 35px;
+    border: 2px solid #d6ccc2;
+    background: #fefae0;
+    font-size: 18px;
+}
+
+select{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background: #f8edeb;
+    border: 2px solid #d6ccc2;
+}
+
+textarea{
+    width: 98%;
+    height: 300px;
+    font-size: 22px;
+    background: #fefae0;
+    border: 2px solid #d6ccc2;
+    color: #5c4b51;
+    padding: 10px;
+}
+
+.center{
+    text-align: center;
+    background: #fde2e4;
+    height: 80px;
+}
+
+button{
+    width: 140px;
+    height: 50px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #cdb4db;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #b5838d;
+}
+
+.opsi{
+    font-size: 22px;
+}
+
+</style>
+</head>
+
+<body>
+
+<table>
+
+<tr>
+    <td colspan="2" class="judul">
+        Data Siswa
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Nama Lengkap</td>
+    <td class="input-area">
+        <input type="text">
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Nama Panggilan</td>
+    <td class="input-area">
+        <input type="text">
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Agama</td>
+    <td class="input-area">
+        <select>
+            <option>Katolik</option>
+            <option>Islam</option>
+            <option>Kristen</option>
+            <option>Hindu</option>
+            <option>Buddha</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Jenis Kelamin</td>
+    <td class="input-area">
+        <select>
+            <option>Laki-laki</option>
+            <option>Perempuan</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Alamat</td>
+    <td class="input-area">
+        <textarea>Jangan lupa isikan alamat Anda di kotak ini !!!</textarea>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="2" class="center">
+        <span class="opsi">
+            <input type="radio" name="r"> R
+            <input type="radio" name="r"> R
+            <input type="radio" name="r"> R
+        </span>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="2" class="center">
+        <span class="opsi">
+            <input type="radio" name="c"> C
+            <input type="radio" name="c"> C
+            <input type="radio" name="c"> C
+        </span>
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Hobby</td>
+    <td class="input-area">
+        <span class="opsi">
+            <input type="radio" name="hobby"> Membaca
+            <input type="radio" name="hobby"> Menulis
+            <input type="radio" name="hobby"> Menyanyi
+        </span>
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Makanan favorit</td>
+    <td class="input-area">
+        <span class="opsi">
+            <input type="checkbox"> Soto
+            <input type="checkbox"> Bakso
+            <input type="checkbox"> Nasi Goreng
+        </span>
+    </td>
+</tr>
+
+<tr>
+    <td class="center">
+        <button type="submit">SUBMIT</button>
+    </td>
+
+    <td class="center">
+        <button type="reset">RESET</button>
+    </td>
+</tr>
+
+</table>
+
+</body>
+</html>
